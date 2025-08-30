@@ -8,9 +8,11 @@ const Login = () => {
   const { user, setUser, password, setPassword } = contextCall()
   const Navigate = useNavigate()
 
+
   function userInputHandler(e) {
     setUser(e.target.value)
   }
+  
   function passwordInputHandler(e) {
     setPassword(e.target.value)
   }
@@ -19,7 +21,7 @@ const Login = () => {
       alert("Enter Login details")
     }
     // Navigate("/home")
-    Navigate("/hextended")
+    Navigate("/HomeExtend")
   }
 
 
@@ -40,12 +42,12 @@ const Login = () => {
             onChange={userInputHandler}
             placeholder=' admin'
             type='text'
-            className='  bg-gray-700 w-full mb-4 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#9ACBD0]'
+            className='bg-gray-700 w-full mb-4 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#9ACBD0]'
           />
 
           <input
             onChange={passwordInputHandler}
-            placeholder=' ******'
+            placeholder=' 12345'
             type='password'
             className=' bg-gray-700 w-full mb-6 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#9ACBD0]'
           />
