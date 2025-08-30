@@ -2,6 +2,7 @@ import React from 'react'
 import { contextCall } from '../Utlity/MyContext'
 import { useNavigate } from 'react-router-dom'
 import NavLogin from "./NavLogin"
+import toast from 'react-hot-toast'
 
 
 const Login = () => {
@@ -12,13 +13,13 @@ const Login = () => {
   function userInputHandler(e) {
     setUser(e.target.value)
   }
-  
+
   function passwordInputHandler(e) {
     setPassword(e.target.value)
   }
   function loginBtnHandler(e) {
     if (!user || !password) {
-      alert("Enter Login details")
+      toast.error("Enter Login details")
     }
     // Navigate("/home")
     Navigate("/HomeExtend")
