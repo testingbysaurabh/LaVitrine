@@ -1,57 +1,94 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" bg-gray-800 text-white px-6 py-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
-        
-        {/* HELP */}
+    <footer className="bg-gray-900 text-white px-8 py-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Help Section */}
         <div>
-          <h4 className="uppercase text-xs font-semibold tracking-wider mb-4">Help</h4>
-          <p className="mb-2">A Client Advisor is available at <span className="underline">1000 000 0000</span>.</p>
-          <p className="mb-4">
-            You can also <span className="underline cursor-pointer">chat</span> or <span className="underline cursor-pointer">email us</span>.
+          <h4 className="uppercase text-sm font-bold mb-6 border-b border-gray-700 pb-2">
+            Help
+          </h4>
+          <p className="mb-3 text-gray-400">
+            A Client Advisor is available at{" "}
+            <span className="underline text-white px-1 rounded">
+              1000 000 0000
+            </span>
+            .
           </p>
-          <ul className="space-y-2">
-            <li className="hover:underline cursor-pointer">FAQ</li>
-            <li className="hover:underline cursor-pointer">Product Care</li>
-            <li className="hover:underline cursor-pointer">Stores</li>
-          </ul>
-        </div>
-
-        {/* SERVICES */}
-        <div>
-          <h4 className="uppercase text-xs font-semibold tracking-wider mb-4">Services</h4>
-          <ul className="space-y-2">
-            <li className="hover:underline cursor-pointer">Repairs</li>
-            <li className="hover:underline cursor-pointer">Personalisation</li>
-            <li className="hover:underline cursor-pointer">Art of Gifting</li>
-            <li className="hover:underline cursor-pointer">Download our Apps</li>
-          </ul>
-        </div>
-
-        {/* ABOUT */}
-        <div>
-          <h4 className="uppercase text-xs font-semibold tracking-wider mb-4">About LaVitrine</h4>
-          <ul className="space-y-2">
-            <li className="hover:underline cursor-pointer">Fashion Shows</li>
-            <li className="hover:underline cursor-pointer">Arts & Culture</li>
-            <li className="hover:underline cursor-pointer">La Maison</li>
-            <li className="hover:underline cursor-pointer">Sustainability</li>
-            <li className="hover:underline cursor-pointer">Latest News</li>
-            <li className="hover:underline cursor-pointer">Careers</li>
-            <li className="hover:underline cursor-pointer">Foundation LaVitrine</li>
-          </ul>
-        </div>
-
-        {/* CONNECT */}
-        <div>
-          <h4 className="uppercase text-xs font-semibold tracking-wider mb-4">Connect</h4>
-          <p className="mb-4">
-            <span className="underline cursor-pointer">Sign up</span> for LaVitrine emails and receive the latest news from the Maison, including exclusive online pre-launches and new collections.
+          <p className="mb-6 text-gray-400">
+            You can also{" "}
+            <span className="underline px-1 rounded">chat</span> or{" "}
+            <span className="underline px-1 rounded">email us</span>.
           </p>
-          <p className="hover:underline cursor-pointer">Follow Us</p>
+          <ul className="space-y-3 text-gray-400">
+            {["FAQ", "Product Care", "Stores"].map((item) => (
+              <li key={item} className="px-1 rounded">
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
+
+        {/* Services Section */}
+        <div>
+          <h4 className="uppercase text-sm font-bold mb-6 border-b border-gray-700 pb-2">
+            Services
+          </h4>
+          <ul className="space-y-3 text-gray-400">
+            {[
+              "Repairs",
+              "Personalisation",
+              "Art of Gifting",
+              "Download our Apps",
+            ].map((item) => (
+              <li key={item} className="px-1 rounded">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* About Section */}
+        <div>
+          <h4 className="uppercase text-sm font-bold mb-6 border-b border-gray-700 pb-2">
+            About LaVitrine
+          </h4>
+          <ul className="space-y-3 text-gray-400">
+            {[
+              "Fashion Shows",
+              "Arts & Culture",
+              "La Maison",
+              "Sustainability",
+              "Latest News",
+              "Careers",
+              "Foundation LaVitrine",
+            ].map((item) => (
+              <li key={item} className="px-1 rounded">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Connect Section */}
+        <div>
+          <h4 className="uppercase text-sm font-bold mb-6 border-b border-gray-700 pb-2">
+            Connect
+          </h4>
+          <p className="mb-6 text-gray-400">
+            <span className="underline px-1 rounded">
+              Sign up
+            </span>{" "}
+            for LaVitrine emails and receive the latest news from the Maison,
+            including exclusive online pre-launches and new collections.
+          </p>
+          <p className="text-gray-400 px-1 rounded">Follow Us</p>
+        </div>
+      </div>
+
+      <div className="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-xs select-none">
+        &copy; 2025 LaVitrine. All rights reserved.
       </div>
     </footer>
   );

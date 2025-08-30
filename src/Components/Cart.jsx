@@ -229,7 +229,7 @@ const Cart = () => {
           <div>
             <h2 className="text-lg font-semibold mb-2">Contact Us</h2>
             <p className="text-sm text-gray-400">📧 support@lavitrine.com</p>
-            <p className="text-sm text-gray-400">📱 +91 9876543210</p>
+            <p className="text-sm text-gray-400">📱 +91 0000000000</p>
             <p className="text-sm text-gray-400">📍 Delhi, India</p>
           </div>
         </div>

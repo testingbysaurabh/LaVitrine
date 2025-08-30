@@ -8,8 +8,8 @@ export const MyContext = ({ children }) => {
     const [orignalData, setOrignalData] = useState([])
     const [data, setData] = useState([])
     const [val, setVal] = useState(0)
-    const [user, setUser] = useState("")
-    const [password, setPassword] = useState("")
+    const [user, setUser] = useState('admin')
+    const [password, setPassword] = useState(12345)
     const [cartVal, setCartVal] = useState(0)
     const [cartData, setCartData] = useState([])
 

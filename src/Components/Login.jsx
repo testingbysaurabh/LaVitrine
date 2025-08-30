@@ -38,14 +38,14 @@ const Login = () => {
           <h2 className='text-2xl font-bold mb-6 text-center text-[#0f7f87]'>Login</h2>
           <input
             onChange={userInputHandler}
-            placeholder='Enter User ID'
+            placeholder=' admin'
             type='text'
             className='  bg-gray-700 w-full mb-4 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#9ACBD0]'
           />
 
           <input
             onChange={passwordInputHandler}
-            placeholder='Enter Password'
+            placeholder=' ******'
             type='password'
             className=' bg-gray-700 w-full mb-6 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#9ACBD0]'
           />

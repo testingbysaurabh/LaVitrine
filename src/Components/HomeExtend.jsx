@@ -28,16 +28,17 @@ const HomeExtend = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-bg-gray-800 min-h-[100vh]  bg-gray-800 mt-18">
-        <div className="flex justify-center items-center bg-bg-gray-800 min-h-[92vh]  bg-gray-800 ">
+      <div className="bg-bg-gray-800 min-h-[100vh]  bg-gray-800 mt-18 ">
+        <div className="flex justify-center items-center bg-bg-gray-800 bg-gray-800 ">
           <div
             id="sliderImage"
-            className="relative w-[99vw] h-[88vh] rounded-xl  overflow-hidden shadow-2xl border-2 border-white"
+            className="relative rounded-xl  overflow-hidden shadow-2xl border-2 border-white 
+            max-sm:h-[50%] "
           >
             <img
               src={img[Slider]}
               alt="slider"
-              className="object-bottom  w-full h-full transition-all duration-700 scale-105 hover:scale-110"
+              className="object-bottom  w-full h-full transition-all duration-700 scale-105 hover:scale-110 max-sm:w-fit max-md:w-full"
             />
             <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center">
               <h1 className="text-white text-3xl md:text-4xl font-bold drop-shadow-lg mb-4 animate-fadeInUp">
